@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Mini Google</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <center>
-  <img height="50" width="300" src="google.png" alt="">
-  </center>  
-  <script async src="https://cse.google.com/cse.js?cx=10719f65d9b36460a">
-  </script>
-<div class="gcse-search"></div>
-  <br>
- <div id="dt"></div>
+
+  <!-- Logo Google -->
+  <div style="text-align: center; margin-top: 20px;">
+    <img src="google.png" alt="Google Logo" width="300" height="50" />
+  </div>
+
+  <!-- Google Custom Search -->
+  <script async src="https://cse.google.com/cse.js?cx=10719f65d9b36460a"></script>
+  <div class="gcse-search" style="margin-top: 20px;"></div>
+
+  <!-- Tanggal Sekarang -->
+  <div id="dt" style="text-align: center; margin-top: 20px; font-weight: bold;"></div>
   <script>
-    var date = new Date();
-    document.getElementById("dt").innerHTML = date.toDateString();
+    const date = new Date();
+    document.getElementById("dt").textContent = date.toDateString();
   </script>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <center>
-<b>&copy;Edo - 2024</b>
-  </center>
-  <br>
-<center><a href="credits.html">
-    <nav class="navigation">
-      <button class="btnWhatsapp-popup">Tentang (klik)</button></center>
-  
+
+  <!-- Footer -->
+  <footer style="text-align: center; margin-top: 100px;">
+    <p><strong>&copy; Edo - 2024</strong></p>
+    <a href="credits.html">
+      <button class="btnWhatsapp-popup">Tentang (klik)</button>
+    </a>
+  </footer>
+
 </body>
 </html>
